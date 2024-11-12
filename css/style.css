@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    transition: color 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.weather-condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.weather-condition img {
+    width: 50px;
+    margin-right: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.weather-condition p {
+    font-size: 1.3em;
+}
+
+  /* Modo oscuro */
+.dark-mode {
+    background-color: #222;
+    color: #f0f4f8;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode h1 {
+    color: #f0f4f8; /* Hacemos el título más visible en modo oscuro */
+}
+
+.dark-mode input {
+    border-color: #555;
+    background-color: #444;
+    color: #f0f4f8;
+}
+
+.dark-mode input:focus {
+    border-color: #007bff;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+}
+
+.dark-mode button:hover {
+    background-color: #484747;
+}
+
+.dark-mode #weather-result {
+    color: #ddd;
+}
+
+#toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#toggle-mode:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode #toggle-mode {
+    background-color: #444;
+}
+
+.dark-mode #toggle-mode:hover {
+    background-color: #333;
+}
