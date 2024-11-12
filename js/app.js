@@ -16,7 +16,7 @@ async function fetchWeather() {
     }
   
     try {
-      const response = await fetch(`http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`);
+      const response = await fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`);
       const data = await response.json();
   
       if (data.error) {
